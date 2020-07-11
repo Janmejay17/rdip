@@ -1,0 +1,60 @@
+<html>
+
+<head>
+
+<title>Simple Javascript Calculator </title>
+<script type="text/javascript" src="jssfile.js"></script>
+<style> 
+		.title{ 
+		margin-bottom: 10px; 
+		text-align:center; 
+		width: 210px; 
+		color:green; 
+		border: solid black 2px; 
+		} 
+
+		input[type="button"] 
+		{ 
+		background-color:green; 
+		color: black; 
+		border: solid black 2px; 
+		width:100% 
+		} 
+
+		input[type="text"] 
+		{ 
+		background-color:white; 
+		border: solid black 2px; 
+		width:100% 
+		} 
+	</style> 
+
+</head>
+
+
+<body>
+
+<!-- Opening a HTML Form. --> 
+<form name="calculator">
+
+<!-- Here user will enter 1st number. --> 
+Number 1: <input type="text" name="number1"> <br> 
+
+<!-- Here user will enter 2nd number. --> 
+Number 2: <input type="text" name="number2"> <br>
+
+<!-- Here result will be displayed. --> 
+Get Result: <input type="text" name="total"> <br>
+
+<!-- Here respective button when clicked, calls only respective artimetic function. --> 
+<input type="button" value="ADD" onclick="addition();">
+<input type="button" value="SUB" onclick="subtraction();">
+<input type="button" value="MUL" onclick="multiply();">
+<input type="button" value="DIV" onclick="division();">
+<input type="button" value="%" onclick="modulus();">
+<input type="button" value="abs" onclick="abs();">
+<input type="button" value="sqrt" onclick="sqrt();">
+</form>
+
+</body>
+</html>

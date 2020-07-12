@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<title>Form</title>
+
+<meta name="keywords" content="JavaScript Form Validation" />
+<meta name="description" content="registration form. " />
+
+<script src="jssfile.js"></script>
+</head>
+<body onload="firstfocus();">
+<center><h1>Form-Validation</h1></center>
+<form name='registration'>
+<ul>
+
+
+<li><label for="username">Name:</label></li>
+<li><input type="text" name="username" size="50" onblur="allLetter()"/></li>
+<li><label for="zip">Phone Number:</label></li>
+<li><input type="text" name="zip" onblur="allnumeric()" length="10"/></li>
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" onblur="ValidateEmail()" /></li>
+<li><input type="submit" name="submit" value="Submit" onclick="alert('Form submitted successfully')" /></li>
+</ul>
+</form>
+</body>
+</html>

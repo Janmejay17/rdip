@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survivor</title>
+	<link rel="stylesheet" type="text/css"  href="Task4.css">
+    <script src="jssfile.js"></script>
+</head>
+<body>
+<div class="onee"><h1>Find the survivor</h1></div><br><br>
+	<div class="containerr">
+	<center><input type="text" class="form-control" id="boxx1" placeholder="Enter a number"></center> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+	<center><input type="text" class="form-control" id="boxx2" placeholder="Enter a number"></center><br>
+	<button class="btn"  onclick='x = input1();return false;'><b>To generate first Number</b></button>&nbsp; &nbsp; &nbsp; 
+	<button class="btn"  onclick='y = input2();return false;'><b>To generate second Number</b></button>&nbsp; &nbsp; &nbsp; <br><br><br>
+	<button class="btn"  onclick='document.getElementById("live").innerHTML = survival(x,y);return false;'><b>To know the Survivor</b></button><br>
+	<center><h2 id="return"></h2></center>
+	<center><h2 id="live"></h2></center>
+</div>
+
+</body>
+</html>

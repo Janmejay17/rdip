@@ -175,4 +175,69 @@ function checkAnagram() {
   }
 }
 }
-//task4
+
+
+//task-4
+function input1()
+{
+  var get1=Math.floor(Math.random()*(1000))
+  document.getElementById("boxx1").value=get1;
+  return get1;
+}
+function input2()
+{
+  var get2=Math.floor(Math.random()*(1000))
+  document.getElementById("boxx2").value=get2;
+  return get2;
+}
+function survival(a,b)
+{
+  a=a%10;
+  b=b%10;
+  var map1 = new Map([[0,1],[1,1],[2,2],[3,3],[4,1],[5,1],[6,2],[7,2],[8,3],[9,3]]);
+  a1=map1.get(a);
+  b1=map1.get(b);
+ 
+  var map = new Map([[1,"Human"],[2,"Cockroach"],[3,"Nuclear Bomb"],[4,"Tie"]]);
+
+  if(a1==3 && b1==3 ||
+   a1==1 && b1==1 ||
+    a1==2 && b1==2)
+  {
+    if(a1==1 && b1==1)
+    {
+      document.getElementById("return").innerHTML=map.get(1)+" Vs "+map.get(1);
+    return "So its a,"+(map.get(4));
+  }
+  if(a1==2 && b1==2)
+    {
+      document.getElementById("return").innerHTML=map.get(2)+" Vs "+map.get(2);
+    return "So its a,"+(map.get(4));
+  }
+  if(a1==3 && b1==3)
+    {
+      document.getElementById("return").innerHTML=map.get(3)+" Vs "+map.get(3);
+    return "So its a,"+(map.get(4));
+  }
+  }
+  else if(a1==1 && b1==2 ||
+     a1==2 && b1==1)
+  {
+    document.getElementById("return").innerHTML=map.get(1)+" Vs "+map.get(2);
+    return "Survivor is : "+(map.get(1));
+  }
+   else if(a1==2 && b1==3 ||
+    a1==3 && b1==2)
+  {
+    document.getElementById("return").innerHTML=map.get(2)+" Vs "+map.get(3);
+    return "Survivor is : "+(map.get(2));
+  }
+   else if(a1==1 && b1==3 ||
+    a1==3 && b1==1)
+  {
+      document.getElementById("return").innerHTML=map.get(1)+" Vs "+map.get(3);
+    return "Survivor is : "+(map.get(3));
+  }
+
+}
+

@@ -1,0 +1,35 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="task3.css">
+<script type="text/javascript" src="jssfile.js"></script>
+<title>Palindrome using JS</title>
+</head>
+<body>
+<form action="" method="get"> &nbsp
+<h2>Palindrome or not.</h2> 
+<p><input type="text" id="tbox" placeholder="Enter the word here" /><br><br><br>
+<input type="button" onclick="TestFunction()" value="check" id="but" /></p>
+
+</form>
+<br>
+<h2>Anagrams Check</h2></center>
+
+<form>
+	<div class="strings">
+<input type="text" id="word1" placeholder="Enter word 1" />
+<input type="text" id="word2" placeholder="Enter word 2" /></center><br><br>
+<input type="button" value="Test" id="button-test" /></center>
+</div>
+<div id="result"></div>
+</form>
+
+
+<script type="text/javascript">
+	var button = document.getElementById('button-test');
+button.addEventListener('click', checkAnagram);
+var resultDiv = document.getElementById('result');
+</script>
+
+</body>
+</html>

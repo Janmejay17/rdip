@@ -241,3 +241,25 @@ function survival(a,b)
 
 }
 
+//Task 5
+function exchange()
+{
+  var input=document.getElementById("input").value;
+  var output=document.getElementById("output").value;
+  var httprequest=new XMLHttpRequest();
+  var url="https://free.currconv.com/api/v7/convert?q="+input+"_"+output+"&compact=ultra&apiKey=ecd96f38ab9cbbe978b7";
+  httprequest.open("GET",url,true)
+  httprequest.send();
+  httprequest.onreadystatechange=function()
+  {
+    var amt=document.getElementById("onee").value;
+    if(httprequest.readyState ==  4 && httprequest.status==200)
+    {
+      var result=httprequest.responseText;
+      var res=JSON.parse(result);
+    for (x in res) {
+     document.getElementById("two").value=(res[x]*amt).toFixed(3)
+      }
+    }
+  }
+}
